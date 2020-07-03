@@ -558,10 +558,12 @@ ul {
 .product-thumb {
   position: relative;
   overflow: hidden;
+  color: red;
 }
 .content {
   /* display: inline-block; */
   position: absolute;
+
   top: 0;
   left: 0;
   width: 100%;
@@ -575,12 +577,15 @@ ul {
   line-height: 28px;
   letter-spacing: 0.03em;
 
-  color: red;
+  /* color: red; */
   padding: 63px 24px;
-  transform: translateY(0%);
+  transform: translateY(101%);
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* .card:hover .product-thumb {
   transform: translateY(0%);
 } */
+.card:hover .content {
+  transform: translateY(0%);
+}
